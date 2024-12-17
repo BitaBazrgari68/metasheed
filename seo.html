@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>بهینه سازی موتورهای جستجو</title>
+</head>
+
+<body class="font-shabnam box-border">
+    <section class="py-3 shadow-[0_15px_30px_-20px_rgba(0,0,0,0.3)] md:mb-10 background-nav">
+        <div class="container max-w-screen-xl mx-auto px-4 ">
+            <nav class="flex-wrap flex-row-reverse lg:flex items-center" x-data="{navbarOpen:false}">
+                <div class="flex items-center mb-10 lg:mb-0">
+                    <img src="./image/logo.gif" width="90" alt="Logo">
+                    <button
+                        class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md"
+                        @click="navbarOpen = !navbarOpen">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-menu">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-14"
+                    :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                    <li
+                        class="font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#contact">تماس باما</a>
+                    </li>
+                    <li
+                        class="font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700  transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#aboutUs">مشتریان</a>
+                    </li>
+
+
+                    <li
+                        class="font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700  transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="./index.html">صفحه اصلی</a>
+                    </li>
+                </ul>
+                <div class="lg:flex flex-col md:flex-row md:items-center text-center md:space-x-6"
+                    :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                    <a href="#"
+                        class="px-6 py-2 bg-blue-500 text-white font-semibold text-lg rounded-xl hover:bg-blue-700 transition ease-in-out duration-500 mb-5 md:mb-0">
+                        Join
+                    </a>
+                </div>
+            </nav>
+        </div> <!-- container.// -->
+    </section>
+    <div class="flex flex-col justify-center px-10 pb-10 ">
+        <div class="flex flex-1">
+            <p class="text-justify about p-10 leading-8 ">
+                بهینه‌سازی موتورهای جستجو (SEO) یک عنصر اساسی در طراحی وب سایت است که باعث افزایش رتبه ویدجت در نتایج
+                جستجوی موتورهای جستجوی مانند گوگل می‌شود. این اقدامات شامل موارد زیر می‌شود:کلمات کلیدی: انتخاب و
+                استفاده از کلمات کلیدی مناسب که مرتبط با محتوای وب سایت شما و علایق مخاطبان است.محتوا: ایجاد محتوای
+                مرتبط، ارزشمند و با کیفیت که به خوبی به کلمات کلیدی مرتبط باشد و از رویکردهای SEO-friendly بهره برده شده
+                باشد.ساختار وب سایت: ایجاد یک ساختار منطقی و کاربرپسند برای وب سایت که به راحتی توسط موتورهای جستجو قابل
+                فهم باشد.بهینه‌سازی تکنیکی: استفاده از تکنیک‌های بهینه‌سازی تکنیکی مانند استفاده از meta tags، URL
+                structure بهینه، سرعت بارگذاری سایت و غیره.لینک‌سازی: ایجاد لینک‌های برگشتی (backlinks) از وب‌سایت‌های
+                مرتبط و با اعتبار برای افزایش اعتبار وب سایت در نظر موتورهای جستجو.ارائه محتوای قابل به اشتراک: ایجاد
+                محتوای جذاب و ارزشمند که مخاطبان آن را با دیگران به اشتراک بگذارند و باعث افزایش ترافیک وب سایت شود.این
+                عوامل می‌توانند بهبود قابل توجهی در رتبه وب سایت شما در نتایج جستجو ایجاد کنند و به افزایش ترافیک و
+                مخاطبان هدف کمک کنند.
+            </p>
+        </div>
+
+        <div class="flex flex-1 justify-center">
+            <div class="subject pt-5">
+                <h1 class="font-bold text-[20px] text-[#03509e]"> مشتریان </h1>
+                <div class="flex items-center text-[#03509e]">
+                    ----------------------- <img src="./img/tag.svg" width="50px" height="50px"> -----------------------
+                </div>
+                <br>
+                <div class="grid grid-rows-1 grid-cols-4 gap-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="contact">
+        <div class=" pb-10 pt-24 background-footer px-16">
+            <div class="flex justify-center items-center flex-col md:flex-row gap-5">
+                <div class="flex flex-col px-10 py-5 border border-[#fec337] text-gray-600 
+               leading-7 rounded-[10px] bg-[rgb(254,195,55)] text-right">
+                    <h2 class="mb-2 border-b border-b-[#767a7d] text-center">لینک های مرتبط</h2>
+                    <p class="pt-2 flex flex-col justify-center text-left text-blue-600 ">
+                        <a class="hover:text-white" target="_blank" href="https://www.jasper.ai">www.jasper.ai</a>
+                        <a class="hover:text-white" target="_blank" href="https://openai.com">chat.openai.com</a>
+                        <a class="hover:text-white" target="_blank" href="https://www.synthesia.io">www.synthesia.io</a>
+                        <a class="hover:text-white" target="_blank" href="https://www.ponisha.ir/">www.ponisha.ir</a>
+                        <a class="hover:text-white" target="_blank"
+                            href="https://www.irantalent.com/">www.irantalent.com</a>
+                        <a class="hover:text-white" target="_blank" href="https://time.ir">www.time.ir</a>
+
+
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center px-10 py-5 border text-[#eee] border-[#565a5d] rounded-[10px] bg-[rgba(86,90,93,0.5)] text-center">
+                    <img alt="ساعت های تماس" src="./image/clock-footer.png" title="ساعت های تماس">
+                    <p class="border-b border-b-[#767a7d] text-[#fec337] pt-5 mb-2 ">ساعت های تماس</p>
+                    <p class="pt-2">صبح ها : 09:00 تا 14:00</p>
+                    <p class="pt-2">عصر ها : 16:00 تا 21:00</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center px-16 py-5 border text-[#eee] border-[#565a5d] rounded-[10px] bg-[rgba(86,90,93,0.5)] text-center">
+                    <img alt="ساعت های تماس" src="./image/call-footer.png" title="ساعت های تماس">
+                    <p class="border-b border-b-[#767a7d] text-[#fec337] pt-5 mb-2 ">شماره های تماس</p>
+                    <p class="pt-2">
+                        <span class="num-yellow">(0998) </span>
+                        <a href="tel:+9833769004">1434232</a>
+                    </p>
+                    <p class="pt-2">
+                        <span class="num-yellow">(0915) </span>
+                        <a href="tel:+9833769004">8187521</a>
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col px-10 py-5 border text-[#eee] border-[#565a5d] rounded-[10px] bg-[rgba(86,90,93,0.5)] text-center">
+
+
+                    <div class="pt-2 flex items-center ">
+                        <div class="flex flex-1">
+                            <span> <a href="tel:+989160433518">09981434232</a> </span>
+                        </div>
+                        <div class="flex flex-1 justify-end items-center pl-10">
+                            <span class="pr-3 text-[#fec337]"> :واتساپ</span>
+                            <img src="./image/whatsapp-fff.png">
+                        </div>
+                    </div>
+                    <div class="pt-2 flex items-center ">
+                        <div class="flex flex-1">
+                            <span> metasheed@gmail.com </span>
+                        </div>
+                        <div class="flex flex-1 justify-end items-center pl-10">
+                            <span class="pr-3 text-[#fec337]"> :ایمیل</span>
+                            <img src="./image/email-ff.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

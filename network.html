@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>شبکه</title>
+</head>
+
+<body class="font-shabnam box-border">
+    <section class="py-3 shadow-[0_15px_30px_-20px_rgba(0,0,0,0.3)] md:mb-10 background-nav">
+        <div class="container max-w-screen-xl mx-auto px-4 ">
+            <nav class="flex-wrap flex-row-reverse lg:flex items-center" x-data="{navbarOpen:false}">
+                <div class="flex items-center mb-10 lg:mb-0">
+                    <img src="./image/logo.gif" width="90" alt="Logo">
+                    <button
+                        class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md"
+                        @click="navbarOpen = !navbarOpen">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-menu">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-14"
+                    :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                    <li
+                        class="font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#contact">تماس باما</a>
+                    </li>
+                    <li
+                        class="font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700  transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#aboutUs">مشتریان</a>
+                    </li>
+
+
+                    <li
+                        class="font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700  transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="./index.html">صفحه اصلی</a>
+                    </li>
+                </ul>
+                <div class="lg:flex flex-col md:flex-row md:items-center text-center md:space-x-6"
+                    :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                    <a href="#"
+                        class="px-6 py-2 bg-blue-500 text-white font-semibold text-lg rounded-xl hover:bg-blue-700 transition ease-in-out duration-500 mb-5 md:mb-0">
+                        Join
+                    </a>
+                </div>
+            </nav>
+        </div> <!-- container.// -->
+    </section>
+    <div class="flex flex-col justify-center px-10 pb-10 ">
+        <div class="flex flex-1">
+            <p class="text-justify about p-10 leading-8 ">
+                شبکه‌های کامپیوتری مجموعه‌ای از رایانه‌ها و دستگاه‌ها هستند که با یکدیگر ارتباط برقرار می‌کنند تا امکان
+                انتقال داده‌ها، اشتراک منابع، و ارتباطات بین کاربران را فراهم کنند. این شبکه‌ها از طریق انواع اتصالات
+                فیزیکی و فناوری‌های ارتباطی مانند کابل‌ها، روترها، سوییچ‌ها، و بی‌سیم (وایرلس) به هم متصل می‌شوند.از
+                شبکه‌های کامپیوتری برای مقاصد مختلفی استفاده می‌شود، از جمله:انتقال داده‌ها: برای انتقال فایل‌ها،
+                پیام‌ها، و اطلاعات بین رایانه‌ها و دستگاه‌ها.اشتراک منابع: امکان به اشتراک گذاری پرینترها، فایل‌ها،
+                پوشه‌ها، و دیگر منابع مشترک بین کاربران و رایانه‌ها.ارتباطات: برای برقراری ارتباطات صوتی و تصویری، مانند
+                تماس تلفنی، ویدئو کنفرانس، و ارسال ایمیل.ارتباطات اینترنتی: فراهم کردن ارتباط به اینترنت برای دسترسی به
+                منابع و خدمات مختلف از جمله وب سایت‌ها، ایمیل، و فایل‌های ذخیره شده در ابر.امنیت: ایجاد سیستم‌های امنیتی
+                برای حفاظت از اطلاعات و منابع درون شبکه در برابر حملات مخرب و دسترسی‌های غیرمجاز.شبکه‌های کامپیوتری از
+                اهمیت بسیاری برای سازمان‌ها، کسب و کارها، و حتی استفاده شخصی برخوردارند و باعث افزایش بهره‌وری و
+                ارتباطات بهبود یافته می‌شوند.
+            </p>
+        </div>
+
+        <div class="flex flex-1 justify-center">
+            <div class="subject pt-5">
+                <h1 class="font-bold text-[20px] text-[#03509e]"> مشتریان </h1>
+                <div class="flex items-center text-[#03509e]">
+                    ----------------------- <img src="./img/tag.svg" width="50px" height="50px"> -----------------------
+                </div>
+                <br>
+                <div class="flex flex-col gap-4">
+                    <a class="hover:text-blue-600" href="https://www.kahrobacenter.com">https://www.kahrobacenter.com</a>
+                    <a class="hover:text-blue-600" href="https://www.mosamashop.com">https://www.mosamashop.com </a>
+                    <a class="hover:text-blue-600" href="https://saharkhizland.com">https://saharkhizland.com</a>
+                    <a class="hover:text-blue-600" href="https://sanadyar.com">https://sanadyar.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="contact">
+        <div class=" pb-10 pt-24 background-footer px-16">
+            <div class="flex justify-center items-center flex-col md:flex-row gap-5">
+                <div class="flex flex-col px-10 py-5 border border-[#fec337] text-gray-600 
+               leading-7 rounded-[10px] bg-[rgb(254,195,55)] text-right">
+                    <h2 class="mb-2 border-b border-b-[#767a7d] text-center">لینک های مرتبط</h2>
+                    <p class="pt-2 flex flex-col justify-center text-left text-blue-600 ">
+                        <a class="hover:text-white" target="_blank" href="https://www.jasper.ai">www.jasper.ai</a>
+                        <a class="hover:text-white" target="_blank" href="https://openai.com">chat.openai.com</a>
+                        <a class="hover:text-white" target="_blank" href="https://www.synthesia.io">www.synthesia.io</a>
+                        <a class="hover:text-white" target="_blank" href="https://www.ponisha.ir/">www.ponisha.ir</a>
+                        <a class="hover:text-white" target="_blank"
+                            href="https://www.irantalent.com/">www.irantalent.com</a>
+                        <a class="hover:text-white" target="_blank" href="https://time.ir">www.time.ir</a>
+
+
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center px-10 py-5 border text-[#eee] border-[#565a5d] rounded-[10px] bg-[rgba(86,90,93,0.5)] text-center">
+                    <img alt="ساعت های تماس" src="./image/clock-footer.png" title="ساعت های تماس">
+                    <p class="border-b border-b-[#767a7d] text-[#fec337] pt-5 mb-2 ">ساعت های تماس</p>
+                    <p class="pt-2">صبح ها : 09:00 تا 14:00</p>
+                    <p class="pt-2">عصر ها : 16:00 تا 21:00</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center px-16 py-5 border text-[#eee] border-[#565a5d] rounded-[10px] bg-[rgba(86,90,93,0.5)] text-center">
+                    <img alt="ساعت های تماس" src="./image/call-footer.png" title="ساعت های تماس">
+                    <p class="border-b border-b-[#767a7d] text-[#fec337] pt-5 mb-2 ">شماره های تماس</p>
+                    <p class="pt-2">
+                        <span class="num-yellow">(0998) </span>
+                        <a href="tel:+9833769004">1434232</a>
+                    </p>
+                    <p class="pt-2">
+                        <span class="num-yellow">(0915) </span>
+                        <a href="tel:+9833769004">8187521</a>
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col px-10 py-5 border text-[#eee] border-[#565a5d] rounded-[10px] bg-[rgba(86,90,93,0.5)] text-center">
+
+
+                    <div class="pt-2 flex items-center ">
+                        <div class="flex flex-1">
+                            <span> <a href="tel:+989160433518">09981434232</a> </span>
+                        </div>
+                        <div class="flex flex-1 justify-end items-center pl-10">
+                            <span class="pr-3 text-[#fec337]"> :واتساپ</span>
+                            <img src="./image/whatsapp-fff.png">
+                        </div>
+                    </div>
+                    <div class="pt-2 flex items-center ">
+                        <div class="flex flex-1">
+                            <span> metasheed@gmail.com </span>
+                        </div>
+                        <div class="flex flex-1 justify-end items-center pl-10">
+                            <span class="pr-3 text-[#fec337]"> :ایمیل</span>
+                            <img src="./image/email-ff.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

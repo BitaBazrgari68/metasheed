@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="./styles.css" rel="stylesheet">
+    <title>پارس</title>
+</head>
+
+<body class="font-shabnam background-body box-border ">
+    <section class=" py-3 shadow-[0_15px_30px_-20px_rgba(0,0,0,0.3)] md:mb-10 background-nav">
+        <div class="container max-w-screen-xl mx-auto px-4 ">
+            <nav class="flex-wrap flex-row-reverse lg:flex items-center" x-data="{navbarOpen:false}">
+                <div class="flex items-center mb-10 lg:mb-0">
+                    <img src="./image/logo.gif" width="90" alt="Logo">
+                    <button
+                        class="lg:hidden w-10 h-10 ml-auto flex items-center justify-center border border-blue-500 text-blue-500 rounded-md"
+                        @click="navbarOpen = !navbarOpen">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-menu">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="lg:flex flex-col lg:flex-row-reverse lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-14"
+                    :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                    <li
+                        class="ml-12 font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700  transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#">صفحه اصلی</a>
+                    </li>
+                    <li
+                        class="font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#contact">تماس باما</a>
+                    </li>
+                    <li
+                        class="font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700  transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#Question">سوالات</a>
+                    </li>
+                    <li
+                        class="font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700  transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#aboutUs">درباره ما</a>
+                    </li>
+                    <li
+                        class="font-semibold text-right text-gray-900 hover:border-b hover:border-blue-300 hover:text-blue-700  transition ease-in-out duration-300 mb-5 lg:mb-0">
+                        <a href="#Services">خدمات</a>
+                    </li>
+                    
+                </ul>
+                <div class="lg:flex flex-col md:flex-row md:items-center text-center md:space-x-6"
+                    :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                    <a href="https://www.instagram.com/meta.sheed2024"
+                        class="px-6 py-2 bg-blue-500 text-white font-semibold text-lg rounded-xl hover:bg-blue-700 transition ease-in-out duration-500 mb-5 md:mb-0">
+                        Join
+                    </a>
+                </div>
+            </nav>
+        </div> <!-- container.// -->
+    </section>
+    <section id="Header">
+        <div class="flex flex-col md:flex-row justify-center items-center overflow-hidden  ">
+            <div class="flex-1 animate__animated animate__fadeIn animate__slow">
+                <img src="./image/header-img2.png" width="70%" height="70%" class="mx-auto">
+            </div>
+            <div class="hidden md:flex flex-1 mx-auto animate__animated animate__fadeIn animate__slow ">
+                <div class="card-wrapper p-5 w-2/3 justify-start flex-col  leading-normal  text-right text-blue-950">
+                    <h1 class="font-bold mb-5 text-[30px]">
+                        با ما بهتر دیده شوید
+                    </h1>
+                    <h2 class="leading-loose about text-justify text-[20px]">
+                        اگر به دنبال راه حل های فناوری منحصر به فرد و نوآورانه هستید ،متاشید آماده ی همکاری با شما است .
+                        همراه ما باشید و از توانایی های فناوری برای رسیدن به اهدافتان بهره مند شوید.
+                    </h2>
+                    <button type="button"
+                        class="py-3 px-4 mt-5 inline-flex items-center gap-x-2 text-sm rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                        data-hs-overlay="#hs-basic-modal">
+                        سفارش پروژه
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Services">
+        <div class="subject">
+            <h1 class="font-bold text-[20px] text-blue-950">خدمات</h1>
+            <div class="flex items-center">
+                ----------------------- <img src="./img/tag.svg" width="50px" height="50px"> -----------------------
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center py-5 gap-8 overflow-hidden">
+            <div
+                class="flex flex-col-reverse  md:flex-row-reverse items-center gap-4 animate__animated animate__slideInLeft animate__slower ">
+                <div class="services justify-center relative">
+                    <a href="./webSite.html" target="_blank">
+                        <img src="./img/website.svg" height="100px" width="100px" class="mx-auto">
+                        <p class="text-center pt-2"> طراحی وب سایت </p>
+                    </a>
+                </div>
+                <div class="services ">
+                    <a href="./logo.html" target="_blank">
+                        <img src="./img/logoDesigner.svg" height="100px" width="100px" class="mx-auto">
+                        <p class="text-center pt-2">طراحی لوگو</p>
+                    </a>
+                </div>
+                <div class="services">
+                    <a href="./seo.html" target="_blank">
+                        <img src="./img/seo.svg" height="100px" width="100px" class="mx-auto ">
+                        <p class="text-center pt-2">بهینه سازی موتورهای جستجو</p>
+                    </a>
+                </div>
+                <div class="services">
+                    <a href="./currency.html" target="_blank">
+                        <img src="./img/DigitalCurrency.svg" height="100px" width="100px" class="mx-auto ">
+                        <p class="text-center pt-2">خرید و فروش ارز دیجیتال</p>
+                    </a>
+                </div>
+
+            </div>
+            <div
+                class="flex flex-col-reverse  md:flex-row-reverse items-center gap-4 animate__animated animate__slideInRight animate__slower  ">
+                <div class="services justify-center">
+                    <a href="./network.html" target="_blank">
+                        <img src="./img/network.svg" height="100px" width="100px" class="mx-auto">
+                        <p class="text-center pt-2">شبکه</p>
+                    </a>
+                </div>
+                <div class="services ">
+                    <a href="./nft.html" target="_blank">
+                        <img src="./img/Nft.svg" height="100px" width="100px" class="mx-auto">
+                        <p class="text-center pt-2">Nft</p>
+                    </a>
+                </div>
+                <div class="services">
+                    <a href="./graphic.html" target="_blank">
+                        <img src="./img/graphic.svg" height="100px" width="100px" class="mx-auto ">
+                        <p class="text-center pt-2">طراحی گرافیکی اختصاصی</p>
+                    </a>
+                </div>
+                <div class="services">
+                    <a href="./education.html" target="_blank">
+                        <img src="./img/Education.svg" height="100px" width="100px" class="mx-auto ">
+                        <p class="text-center pt-2">آموزش</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutUs" class="background-about">
+
+        <div class="subject pt-5 hidden md:flex">
+            <h1 class="font-bold text-[20px] text-[#03509e]">درباره ی ما</h1>
+            <div class="flex items-center text-[#03509e]">
+                ----------------------- <img src="./img/tag.svg" width="50px" height="50px"> -----------------------
+            </div>
+        </div>
+        <div class="hidden md:flex items-center justify-center pl-8">
+            <div class="flex  flex-1 justify-center items-center">
+                <p class="text-justify border-r-2 leading-8 pr-5 pl-10 pb-10 about">
+                    متاشید یک شرکت فناوری است که به طراحی و توسعه وب سایت و طراحی شبکه و ارائه خدمات فناوری اطلاعات
+                    متعهد است.با تیمی از متخصصان مبتنی بر فناوری و شبکه،متاشید به ارائه راه حل هایی برای نیازهای فناوری
+                    اطلاعات و ارتباطات شما می پردازد.
+                    ما در متاشید به توسعه و پیشرفت شما در دنیای اینترنت اعتقاد داریم.با توجه به اهمیت بیشتر شبکه های
+                    کامپیوتری در زندگی روزمره و تجارت ،ما به ارائه راه حل هایی شخصی سازی شده و به روز در زمینه ی شبکه
+                    های کامپیوتری متعهدیم.
+                    از مدیریت و بهینه سازی شبکه های کوچک تا پیاده سازی و مدیریت شبکه های بزرگ، تیم متاشید آماده ی همکاری
+                    با شما است.با توانایی های ما در حوزه شبکه های کامپیوتری ، ما به شما کمک می کنیم تا از فناوری برای
+                    بهبود عملکرد و کسب مزیت رقابتی استفاده کنید.
+                </p>
+            </div>
+            <div class="flex flex-1 justify-center items-center">
+                <img src="./img/about.png" class="w-[31rem] h-[31rem] rounded-full border-4 border-[#3a98f7]">
+            </div>
+        </div>
+    </section>
+
+    <section id="Question">
+        <div class="subject pt-5">
+            <h1 class="font-bold text-[20px] text-[#03509e]">سوالات شما</h1>
+            <div class="flex items-center text-[#03509e]">
+                ----------------------- <img src="./img/question.svg" width="50px" height="50px">
+                -----------------------
+            </div>
+        </div>
+        <div class="px-10 py-5 about">
+            <div id="accordion-color" data-accordion="collapse"
+                data-active-classes="dark:bg-gray-800 text-blue-600 dark:text-white">
+                <h2 id="accordion-color-heading-1">
+                    <button type="button"
+                        class="flex items-center justify-between bg-blue-200 text-lg font-bold w-full p-5 rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl dark:border-gray-700 dark:text-gray-400 hover:bg-blue-600 hover:text-white dark:hover:bg-gray-800 gap-3"
+                        data-accordion-target="#accordion-color-body-1" aria-expanded="true"
+                        aria-controls="accordion-color-body-1">
+                        <span>طراحی ui و ux چیست؟</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+                    <div
+                        class="bg-gray-100 p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                        <p class="mb-2 pr-5 text-gray-500 dark:text-gray-400">
+                            UI مخفف عبارت User Interface Design به معنای طراحی رابط کاربری است
+                            UX مخفف عبارت User Experience Design به معنای طراحی تجربه‌ی کاربری است
+                        </p>
+                    </div>
+                </div>
+                <h2 id="accordion-color-heading-2">
+                    <button type="button"
+                        class="flex items-center justify-between text-lg w-full p-5 bg-blue-200 font-bold rtl:text-right text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-600 hover:text-white dark:hover:bg-gray-800 gap-3"
+                        data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                        aria-controls="accordion-color-body-2">
+                        <span>طراحی ui و ux چیست؟</span>
+                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5 5 1 1 5" />
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                    <div class="bg-gray-100 p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 pr-5 text-gray-500 dark:text-gray-400">
+                            UI مخفف عبارت User Interface Design به معنای طراحی رابط کاربری است
+                            UX مخفف عبارت User Experience Design به معنای طراحی تجربه‌ی کاربری است
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <form class="border border-dashed pb-2 rounded-b-xl ">
+                <div class=" px-8 ">
+                    <div class=" ">
+                        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                            <div class="sm:col-span-3">
+                                <label for="first-name"
+                                    class="block text-sm font-medium leading-6 text-gray-900">نام:</label>
+                                <div class="mt-2">
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                        class="bg-gray-100 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-3">
+                                <label for="last-name"
+                                    class="block text-sm font-medium leading-6 text-gray-900">ایمیل:</label>
+                                <div class="mt-2">
+                                    <input type="text" name="email" id="email" autocomplete="family-name"
+                                        class="bg-gray-100 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="col-span-full">
+                                <label for="about"
+                                    class="block text-sm font-medium leading-6 text-gray-900">سوال:</label>
+                                <div class="mt-2">
+                                    <textarea id="about" name="about" rows="3"
+                                        class="bg-gray-100 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 flex items-center justify-end gap-x-6 px-8">
+                    <button type="submit"
+                        class="rounded-md bg-blue-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">ارسال</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="insta">
+        <div class="mt-3 w-full pb-5 overflow-hidden bg-blue-700 flex flex-row-reverse justify-between items-center 
+        bg-gradient-to-l dark:text-white transition-all from-white dark:from-cnDarkBlue-20 to-white/30
+        ">
+            <div class="  pb-6 pt-18 px-6 sm:p-10 animate-fadeleft
+                text-center sm:text-right text-base sm:text-xl lg:text-3xl font-bold sm:pl-64">
+                اینستاگرام متاشید یادت نره
+            </div>
+            <div class="ml-5">
+                <a class="group rounded-b-full bg-white dark:bg-cnDarkBlue-20 transition-colors
+             w-40 h-40 lg:w-48 lg:h-48 flex flex-col justify-center items-center dir-ltr" target="_blank"
+                    href="https://www.instagram.com/meta.sheed2024">
+                    <img src="./img/instagramQR.png"
+                        class="w-24 h-24 lg:w-32 lg:h-32 inline-block dark:hidden transition-all">
+                    <p class=" text-xs lg:text-sm transition-all group-hover:text-cnBlue-15">@META.SHEED2024
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class=" pb-10 pt-24 background-footer px-16">
+            <div class="flex justify-center items-center flex-col md:flex-row gap-5">
+                <div class="flex flex-col px-10 py-5 border border-[#fec337] text-gray-600 
+               leading-7 rounded-[10px] bg-[rgb(254,195,55)] text-right">
+                    <h2 class="mb-2 border-b border-b-[#767a7d] text-center">لینک های مرتبط</h2>
+                    <p class="pt-2 flex flex-col justify-center text-left text-blue-600 ">
+                        <a class="hover:text-white" target="_blank" href="https://www.jasper.ai">www.jasper.ai</a>
+                        <a class="hover:text-white" target="_blank" href="https://openai.com">chat.openai.com</a>
+                        <a class="hover:text-white" target="_blank" href="https://www.synthesia.io">www.synthesia.io</a>
+                        <a class="hover:text-white" target="_blank" href="https://www.ponisha.ir/">www.ponisha.ir</a>
+                        <a class="hover:text-white" target="_blank"
+                            href="https://www.irantalent.com/">www.irantalent.com</a>
+                        <a class="hover:text-white" target="_blank" href="https://time.ir">www.time.ir</a>
+
+
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center px-10 py-5 border text-[#eee] border-[#565a5d] rounded-[10px] bg-[rgba(86,90,93,0.5)] text-center">
+                    <img alt="ساعت های تماس" src="./image/clock-footer.png" title="ساعت های تماس">
+                    <p class="border-b border-b-[#767a7d] text-[#fec337] pt-5 mb-2 ">ساعت های تماس</p>
+                    <p class="pt-2">صبح ها : 09:00 تا 14:00</p>
+                    <p class="pt-2">عصر ها : 16:00 تا 21:00</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center px-16 py-5 border text-[#eee] border-[#565a5d] rounded-[10px] bg-[rgba(86,90,93,0.5)] text-center">
+                    <img alt="ساعت های تماس" src="./image/call-footer.png" title="ساعت های تماس">
+                    <p class="border-b border-b-[#767a7d] text-[#fec337] pt-5 mb-2 ">شماره های تماس</p>
+                    <p class="pt-2">
+                        <span class="num-yellow">(0998) </span>
+                        <a href="tel:+9833769004">1434232</a>
+                    </p>
+                    <p class="pt-2">
+                        <span class="num-yellow">(0915) </span>
+                        <a href="tel:+9833769004">8187521</a>
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col px-10 py-5 border text-[#eee] border-[#565a5d] rounded-[10px] bg-[rgba(86,90,93,0.5)] text-center">
+
+
+                    <div class="pt-2 flex items-center ">
+                        <div class="flex flex-1">
+                            <span> <a href="tel:+989160433518">09981434232</a> </span>
+                        </div>
+                        <div class="flex flex-1 justify-end items-center pl-10">
+                            <span class="pr-3 text-[#fec337]"> :واتساپ</span>
+                            <img src="./image/whatsapp-fff.png">
+                        </div>
+                    </div>
+                    <div class="pt-2 flex items-center ">
+                        <div class="flex flex-1">
+                            <span> metasheed@gmail.com </span>
+                        </div>
+                        <div class="flex flex-1 justify-end items-center pl-10">
+                            <span class="pr-3 text-[#fec337]"> :ایمیل</span>
+                            <img src="./image/email-ff.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
