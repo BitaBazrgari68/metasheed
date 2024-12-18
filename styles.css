@@ -1067,7 +1067,7 @@ input:checked + .toggle-bg {
 }
 
 .background-footer{
-  background: url(../public/img/bgfooter.jpg)  no-repeat;
+  background: url(./img/bgfooter.jpg)  no-repeat;
   background-size: cover;
 }
 
