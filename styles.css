@@ -1052,7 +1052,7 @@ input:checked + .toggle-bg {
 }
 
 .background-body {
-  background: url(../public/img/herobg.svg) right top no-repeat;
+  background: url(./img/herobg.svg) right top no-repeat;
 }
 
 .background-nav {
