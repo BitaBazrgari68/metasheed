@@ -1052,7 +1052,7 @@ input:checked + .toggle-bg {
 }
 
 .background-body {
-  background: url(../public/img/hero-bg.svg) right top no-repeat;
+  background: url(../public/img/herobg.svg) right top no-repeat;
 }
 
 .background-nav {
@@ -1063,11 +1063,11 @@ input:checked + .toggle-bg {
 }
 
 .background-about {
-  background: url(../public/img/bg-about.png) top center no-repeat;
+  background: url(../public/img/bgabout.png) top center no-repeat;
 }
 
 .background-footer{
-  background: url(../public/img/bg-footer.jpg)  no-repeat;
+  background: url(../public/img/bgfooter.jpg)  no-repeat;
   background-size: cover;
 }
 
