@@ -910,11 +910,11 @@ input:checked + .toggle-bg {
 @font-face {
   font-family: 'shabnam';
 
-  src: url(../public/font/Shabnam.woff) format('woff');
+  src: url(./font/Shabnam.woff) format('woff');
 
-  src: url(../public/font/Shabnam.eot) format('eot');
+  src: url(./font/Shabnam.eot) format('eot');
 
-  src: url(../public/font/Shabnam.ttf) format('ttf');
+  src: url(./font/Shabnam.ttf) format('ttf');
 }
 
 *, ::before, ::after {
