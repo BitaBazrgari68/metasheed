@@ -1063,7 +1063,7 @@ input:checked + .toggle-bg {
 }
 
 .background-about {
-  background: url(../public/img/bgabout.png) top center no-repeat;
+  background: url(./img/bgabout.png) top center no-repeat;
 }
 
 .background-footer{
